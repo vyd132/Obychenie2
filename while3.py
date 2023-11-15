@@ -56,8 +56,6 @@ while True:
         speedx1 = random.randint(5, 20)
 
 
-
-
     wrap.sprite.move_at_angle_point(hammer, width - 30, hammY, 50)
     wrap.sprite.set_angle(hammer,angle)
     angle += 10
