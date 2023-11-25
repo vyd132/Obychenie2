@@ -29,6 +29,13 @@ def ball_grab(num):
         wrap.actions.move_to(num, ballx + 30, bally - 20, 1500)
 
 
+def ball_kick(num,x,y):
+    ball_grab(num)
+    ballx = wrap.sprite.get_x(ball)
+    bally = wrap.sprite.get_y(ball)
+    numx = wrap.sprite.get_x(num)
+    wrap.actions.move_to(ball, x, y)
+
 
 
 width = 600
@@ -45,3 +52,4 @@ ball_pass(mar,crab)
 ball_pass(crab,mar)
 ball_pass(plant,cloud)
 ball_grab(mar)
+ball_kick(plant,300,500)
